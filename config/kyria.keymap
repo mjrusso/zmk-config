@@ -11,6 +11,7 @@
 #define NAV  1
 #define NUM  2
 #define SYM  3
+#define FUN  4
 
 / {
 	keymap {
@@ -19,10 +20,10 @@
 		default_layer {
 
 			bindings = <
-	&kp TAB    &kp Q  &kp W     &kp E     &kp R     &kp T                                                                       &kp Y     &kp U     &kp I      &kp O    &kp P     &kp GRAVE
-	&kp LCTRL  &kp A  &kp S     &kp D     &kp F     &kp G                                                                       &kp H     &kp J     &kp K      &kp L    &kp SEMI  &kp RCTRL
-	&kp LSHFT  &kp Z  &kp X     &kp C     &kp V     &kp B         &kp LSHFT  &kp LSHFT            &kp LSHFT      &kp LSHFT      &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-	                  &kp C_PP  &kp LALT  &kp LGUI  &lt NAV BSPC  &kp ESC    &kp RET              &lt SYM ENTER  &lt NUM SPACE  &kp RALT  &kp C_PP
+	&kp TAB    &kp Q  &kp W     &kp E     &kp R     &kp T                                                                       &kp Y    &kp U     &kp I      &kp O    &kp P     &kp GRAVE
+	&kp LCTRL  &kp A  &kp S     &kp D     &kp F     &kp G                                                                       &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp RCTRL
+	&kp LSHFT  &kp Z  &kp X     &kp C     &kp V     &kp B         &kp LSHFT  &kp LSHFT            &kp LSHFT      &kp LSHFT      &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+	                  &kp C_PP  &kp LALT  &kp LGUI  &lt NAV BSPC  &kp ESC    &kp RET              &lt SYM ENTER  &lt NUM SPACE  &mo FUN  &kp C_PP
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
@@ -54,6 +55,16 @@
 	                            &trans     &kp LPAR   &kp RPAR  &kp UNDER  &trans            &trans  &trans  &trans  &trans    &trans
 			>;
 		};
+
+		fun_layer {
+			bindings = <
+	&none  &kp F12  &kp F7  &kp F8  &kp F9  &none                                             &none   &none     &none      &none     &none      &none
+	&none  &kp F11  &kp F4  &kp F5  &kp F6  &none                                             &none   &kp LGUI  &kp LSHFT  &kp LALT  &kp LCTRL  &none
+	&none  &kp F10  &kp F1  &kp F2  &kp F3  &none   &trans  &trans            &trans  &trans  &none   &none     &none      &none     &none      &none
+	                        &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans    &trans
+			>;
+		};
+
 
 	};
 };
