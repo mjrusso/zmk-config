@@ -13,6 +13,11 @@
 #define SYM  3
 #define FUN  4
 
+#define BACK      LG(LBKT)
+#define FORWARD   LG(RBKT)
+#define TAB_LEFT  LG(LS(LBKT))
+#define TAB_RIGHT LG(LS(RBKT))
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -31,10 +36,10 @@
 
 		nav_layer {
 			bindings = <
-	&none  &none      &none     &none      &none     &none                                             &kp HOME  &kp LG(LBKT)  &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &kp LG(RBKT)  &none
-	&none  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &none                                             &kp CAPS  &kp LEFT      &kp DOWN          &kp UP            &kp RIGHT     &none
-	&none  &none      &none     &none      &none     &none   &trans  &trans            &trans  &trans  &kp END   &none         &kp PG_DN         &kp PG_UP         &none         &none
-	                            &trans     &trans    &trans  &trans  &trans            &trans  &trans  &trans    &trans        &trans
+	&none  &none      &none     &none      &none     &none                                             &kp HOME  &kp BACK  &kp TAB_LEFT  &kp TAB_RIGHT  &kp FORWARD  &none
+	&none  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &none                                             &kp CAPS  &kp LEFT  &kp DOWN      &kp UP         &kp RIGHT    &none
+	&none  &none      &none     &none      &none     &none   &trans  &trans            &trans  &trans  &kp END   &none     &kp PG_DN     &kp PG_UP      &none        &none
+	                            &trans     &trans    &trans  &trans  &trans            &trans  &trans  &trans    &trans    &trans
 			>;
 		};
 
