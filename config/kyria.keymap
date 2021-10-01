@@ -18,6 +18,11 @@
 #define TAB_LEFT  LG(LS(LBKT))
 #define TAB_RIGHT LG(LS(RBKT))
 
+&sk {
+    release-after-ms = <2000>;
+};
+
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -37,7 +42,7 @@
 		nav_layer {
 			bindings = <
 	&none  &none      &none     &none      &none     &none                                             &kp HOME  &kp BACK  &kp TAB_LEFT  &kp TAB_RIGHT  &kp FORWARD  &none
-	&none  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &none                                             &kp CAPS  &kp LEFT  &kp DOWN      &kp UP         &kp RIGHT    &none
+	&none  &sk LCTRL  &sk LALT  &sk LSHFT  &sk LGUI  &none                                             &kp CAPS  &kp LEFT  &kp DOWN      &kp UP         &kp RIGHT    &none
 	&none  &none      &none     &none      &none     &none   &trans  &trans            &trans  &trans  &kp END   &none     &kp PG_DN     &kp PG_UP      &none        &none
 	                            &trans     &trans    &trans  &trans  &trans            &trans  &trans  &trans    &trans    &trans
 			>;
@@ -46,7 +51,7 @@
 		num_layer {
 			bindings = <
 	&none  &kp LBKT   &kp N7  &kp N8  &kp N9   &kp RBKT                                                    &none   &none     &none      &none     &none      &none
-	&none  &kp SEMI   &kp N4  &kp N5  &kp N6   &kp EQUAL                                                   &none   &kp LGUI  &kp LSHFT  &kp LALT  &kp LCTRL  &none
+	&none  &kp SEMI   &kp N4  &kp N5  &kp N6   &kp EQUAL                                                   &none   &sk LGUI  &sk LSHFT  &sk LALT  &sk LCTRL  &none
 	&none  &kp GRAVE  &kp N1  &kp N2  &kp N3   &kp BACKSLASH  &trans     &trans            &trans  &trans  &none   &none     &none      &none     &none      &none
 	                          &trans  &kp DOT  &kp N0         &kp MINUS  &trans            &trans  &trans  &trans  &trans    &trans
 			>;
@@ -55,7 +60,7 @@
 		sym_layer {
 			bindings = <
 	&none  &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC                                               &none   &none     &none      &none     &none      &none
-	&none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                                               &none   &kp LGUI  &kp LSHFT  &kp LALT  &kp LCTRL  &none
+	&none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS                                               &none   &sk LGUI  &sk LSHFT  &sk LALT  &sk LCTRL  &none
 	&none  &kp TILDE  &kp EXCL  &kp AT     &kp POUND  &kp PIPE  &trans     &trans            &trans  &trans  &none   &none     &none      &none     &none      &none
 	                            &trans     &kp LPAR   &kp RPAR  &kp UNDER  &trans            &trans  &trans  &trans  &trans    &trans
 			>;
@@ -64,7 +69,7 @@
 		fun_layer {
 			bindings = <
 	&none  &kp F12  &kp F7  &kp F8  &kp F9  &none                                             &none   &none     &none      &none     &none      &none
-	&none  &kp F11  &kp F4  &kp F5  &kp F6  &none                                             &none   &kp LGUI  &kp LSHFT  &kp LALT  &kp LCTRL  &none
+	&none  &kp F11  &kp F4  &kp F5  &kp F6  &none                                             &none   &sk LGUI  &sk LSHFT  &sk LALT  &sk LCTRL  &none
 	&none  &kp F10  &kp F1  &kp F2  &kp F3  &none   &trans  &trans            &trans  &trans  &none   &none     &none      &none     &none      &none
 	                        &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans    &trans
 			>;
