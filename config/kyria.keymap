@@ -19,7 +19,7 @@
 #define TAB_RIGHT LG(LS(RBKT))
 
 &kscan0 {
-    debounce-period = <10>;
+    debounce-period = <12>;
 };
 
 &sk {
