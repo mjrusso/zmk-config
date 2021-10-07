@@ -35,11 +35,19 @@
 / {
     combos {
         compatible = "zmk,combos";
+
         combo_enter {
             timeout-ms = <50>;
             key-positions = <33 46>;
             bindings = <&kp ENTER>;
         };
+
+        combo_backward_kill_word {
+            timeout-ms = <50>;
+            key-positions = <30 43>;
+            bindings = <&kp LA(BSPC)>;
+        };
+
     };
 };
 
