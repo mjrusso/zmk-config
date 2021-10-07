@@ -7,11 +7,12 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define BASE 0
-#define NAV  1
-#define NUM  2
-#define SYM  3
-#define FUN  4
+#define BASE  0
+#define NAV   1
+#define NUM   2
+#define SYM   3
+#define FUN   4
+#define MACRO 5
 
 #define BACK      LG(LBKT)
 #define FORWARD   LG(RBKT)
@@ -63,10 +64,10 @@
 		default_layer {
 
 			bindings = <
-	&kp TAB    &kp Q  &kp W  &kp E	   &kp R     &kp T                                                    &kp Y          &kp U      &kp I      &kp O    &kp P     &kp GRAVE
-	&kp LCTRL  &kp A  &kp S	 &kp D	   &kp F     &kp G                                                    &kp H          &kp J      &kp K      &kp L    &kp APOS  &kp RCTRL
-	&kp LSHFT  &kp Z  &kp X	 &kp C	   &kp V     &kp B     &kp LSHFT     &kp ESC      &kp ESC  &kp LSHFT  &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-				 &kp C_PP  &kp LALT  &kp LGUI  &lt NAV BSPC  &kp ESC      &mo FUN  &mo SYM    &lt NUM SPACE  &kp LCTRL  &kp C_PP
+	&kp TAB    &kp Q  &kp W  &kp E	   &kp R     &kp T                                                      &kp Y          &kp U      &kp I      &kp O    &kp P     &kp GRAVE
+	&kp LCTRL  &kp A  &kp S	 &kp D	   &kp F     &kp G                                                      &kp H          &kp J      &kp K      &kp L    &kp APOS  &kp RCTRL
+	&kp LSHFT  &kp Z  &kp X	 &kp C	   &kp V     &kp B     &kp LSHFT     &kp ESC        &kp ESC  &kp LSHFT  &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+				 &kp C_PP  &kp LALT  &kp LGUI  &lt NAV BSPC  &mo MACRO      &mo FUN  &mo SYM    &lt NUM SPACE  &kp LCTRL  &kp C_PP
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
@@ -108,6 +109,14 @@
 			>;
 		};
 
+		macro_layer {
+			bindings = <
+	&none  &none      &none     &none      &none     &none                                       &none   &none   &none   &none  &none  &none
+	&none  &sk LCTRL  &sk LALT  &sk LSHFT  &sk LGUI  &none                                       &none   &none   &none   &none  &none  &none
+	&none  &none      &none     &none      &none     &none   &trans  &trans      &trans  &trans  &none   &none   &none   &none  &none  &none
+	                            &trans     &trans    &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+			>;
+		};
 
 	};
 };
