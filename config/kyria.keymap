@@ -18,6 +18,10 @@
 #define TAB_LEFT  LG(LS(LBKT))
 #define TAB_RIGHT LG(LS(RBKT))
 
+&kscan0 {
+    debounce-period = <10>;
+}
+
 &sk {
     release-after-ms = <2000>;
 };
