@@ -5,3 +5,5 @@ My personal [ZMK](https://zmk.dev) firmware configuration, for my wireless
 
 The keymap is adapted from the [Miryoku
 layout](https://github.com/manna-harbour/qmk_firmware/blob/miryoku/users/manna-harbour_miryoku/miryoku.org).
+
+Includes code adapted from [dxmh's ZMK config](https://github.com/dxmh/zmk-config).
