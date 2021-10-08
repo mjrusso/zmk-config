@@ -135,7 +135,7 @@
 			bindings = <
 	&none  &none      &none     &none      &none     &none                                          &none      &none   &none   &none  &none  &none
 	&none  &sk LCTRL  &sk LALT  &sk LSHFT  &sk LGUI  &none                                          &none      &none   &none   &none  &none  &none
-	&none  &none      &none     &none      &none     &none   &trans  &trans      &trans  &trans     &none      &none   &none   &none  &none  &none
+	&none  &none      &none     &none      &none     &none   &trans  &trans      &reset  &trans     &none      &none   &none   &none  &none  &none
 	                            &trans     &trans    &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE  &trans  &trans
 			>;
 		};
