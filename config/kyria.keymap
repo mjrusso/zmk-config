@@ -53,6 +53,13 @@
             bindings = <&kp LA(BSPC)>;
         };
 
+        combo_set_mark {
+            timeout-ms = <50>;
+            key-positions = <47 48>;
+            bindings = <&kp LC(SPACE)>;
+        };
+
+
     };
 };
 
