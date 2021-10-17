@@ -19,6 +19,8 @@
 #define FORWARD   LG(RBKT)
 #define TAB_LEFT  LG(LS(LBKT))
 #define TAB_RIGHT LG(LS(RBKT))
+#define NEXT_LINE LC(N)
+#define PREV_LINE LC(P)
 
 &kscan0 {
     debounce-period = <20>;
@@ -93,7 +95,7 @@
 				 &kp C_PP  &kp LALT  &kp LGUI  &lt NAV BSPC  &mo MACRO      &mo FUN  &mo SYM     &lt NUM SPACE  &kp LCTRL  &kp C_PP
 			>;
 
-			sensor-bindings = <&inc_dec_kp LC(N) LC(P) &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp PREV_LINE NEXT_LINE &inc_dec_kp PG_UP PG_DN>;
 		};
 
 		nav_layer {
