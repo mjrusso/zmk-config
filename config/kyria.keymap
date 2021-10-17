@@ -93,7 +93,7 @@
 				 &kp C_PP  &kp LALT  &kp LGUI  &lt NAV BSPC  &mo MACRO      &mo FUN  &mo SYM     &lt NUM SPACE  &kp LCTRL  &kp C_PP
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp LC(N) LC(P) &inc_dec_kp PG_UP PG_DN>;
 		};
 
 		nav_layer {
