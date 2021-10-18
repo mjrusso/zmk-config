@@ -22,6 +22,14 @@
 #define NEXT_LINE LC(N)
 #define PREV_LINE LC(P)
 
+&left_encoder {
+    resolution = <2>;
+};
+
+&right_encoder {
+    resolution = <2>;
+};
+
 &kscan0 {
     debounce-period = <20>;
 };
