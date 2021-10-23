@@ -102,14 +102,14 @@
         combo_gui_thumb_right {
             timeout-ms = <50>;
             key-positions = <19 47>;
-            bindings = <&kp LGUI>;
+            bindings = <&kp RGUI>;
         };
 
 
         combo_shift_thumb_right {
             timeout-ms = <50>;
             key-positions = <20 47>;
-            bindings = <&kp LSHFT>;
+            bindings = <&kp RSHFT>;
         };
 
         combo_alt_thumb_right {
@@ -121,11 +121,10 @@
         combo_control_thumb_right {
             timeout-ms = <50>;
             key-positions = <22 47>;
-            bindings = <&kp LCTRL>;
+            bindings = <&kp RCTRL>;
         };
 
     };
-
 
 };
 
