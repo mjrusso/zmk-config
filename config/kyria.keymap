@@ -70,60 +70,6 @@
             bindings = <&kp LC(SPACE)>;
         };
 
-
-        // Chord mods with thumb keys:
-        // https://precondition.github.io/home-row-mods#chording-with-thumb-keys
-
-        combo_control_thumb_left {
-            timeout-ms = <50>;
-            key-positions = <13 42>;
-            bindings = <&kp LCTRL>;
-        };
-
-        combo_alt_thumb_left {
-            timeout-ms = <50>;
-            key-positions = <14 42>;
-            bindings = <&kp LALT>;
-        };
-
-        combo_shift_thumb_left {
-            timeout-ms = <50>;
-            key-positions = <15 42>;
-            bindings = <&kp LSHFT>;
-        };
-
-        combo_gui_thumb_left {
-            timeout-ms = <50>;
-            key-positions = <16 42>;
-            bindings = <&kp LGUI>;
-        };
-
-
-        combo_gui_thumb_right {
-            timeout-ms = <50>;
-            key-positions = <19 47>;
-            bindings = <&kp RGUI>;
-        };
-
-
-        combo_shift_thumb_right {
-            timeout-ms = <50>;
-            key-positions = <20 47>;
-            bindings = <&kp RSHFT>;
-        };
-
-        combo_alt_thumb_right {
-            timeout-ms = <50>;
-            key-positions = <21 47>;
-            bindings = <&kp LALT>;
-        };
-
-        combo_control_thumb_right {
-            timeout-ms = <50>;
-            key-positions = <22 47>;
-            bindings = <&kp RCTRL>;
-        };
-
     };
 
 };
